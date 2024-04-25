@@ -22,7 +22,7 @@
     ## end first single month unit
     # optional second unit (range) or increment
     (?:
-        # range, a literal dash followed by ANOTHER single unit
+        # range, a literal dash followed by ANOTHER single unit (optionally followed by an ignored increment)
         (?:
             [-]
             ## second single month unit
@@ -41,6 +41,11 @@
                 [*]
             )
             ## end second single month unit
+            # optional (ignored) increment, immediately following said range
+            (?:
+                [/]
+                [0-9]+
+            )?
         )
         |
         # OR increment, a literal slash followed by integer increment value
@@ -71,7 +76,7 @@
         ## end first single month unit
         # optional second unit (range) or increment
         (?:
-            # range, a literal dash followed by ANOTHER single unit
+            # range, a literal dash followed by ANOTHER single unit (optionally followed by an ignored increment)
             (?:
                 [-]
                 ## second single month unit
@@ -90,6 +95,11 @@
                     [*]
                 )
                 ## end second single month unit
+                # optional (ignored) increment, immediately following said range
+                (?:
+                    [/]
+                    [0-9]+
+                )?
             )
             |
             # OR increment, a literal slash followed by integer increment value
@@ -125,7 +135,7 @@
 ## end first single month unit
 # optional second unit (range) or increment
 (?:
-    # range, a literal dash followed by ANOTHER single unit
+    # range, a literal dash followed by ANOTHER single unit (optionally followed by an ignored increment)
     (?:
         [-]
         ## second single month unit
@@ -144,6 +154,11 @@
             [*]
         )
         ## end second single month unit
+        # optional (ignored) increment, immediately following said range
+        (?:
+            [/]
+            [0-9]+
+        )?
     )
     |
     # OR increment, a literal slash followed by integer increment value
