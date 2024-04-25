@@ -19,3 +19,4 @@ cron(0 23-4 L * ? *)	First minute of every hour between 11am and 4pm on last day
 cron(0 0 L 6 ? 2020-2040)	Midnight (UTC+0) on last day of June, from 2020 to 2040
 cron(0 0 ? * SUN,TUE,THU *)	Midnight (UTC+0) every Sunday, Tuesday and Thursday
 cron(0 0 1 1 ? 2020/3)	Midnight (UTC+0) on first day of every month, every 3 years starting from 2020
+cron(0 0 1 JAN-MAR/2 ? *)	Midnight (UTC+0) on first day of month, January through March, silently ignoring increment of month
