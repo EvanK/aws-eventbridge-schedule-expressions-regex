@@ -4,7 +4,7 @@ As this is intended for use in CloudFormation templates (as an `AllowedPattern`)
 
 However, due to the massive complexity and sheer scope of the overall expression we are maintiaining here, it will be broken up into various pieces for the `cron()` portion and versioned as native Perl regex.
 
-The most recent working version of this pattern is also available (with unit tests!) on [Regex101](https://regex101.com/r/YHscM3/2).
+The most recent working version of this pattern is also available (with unit tests!) on [Regex101](https://regex101.com/r/YHscM3/3).
 
 ## Project Structure
 
